@@ -6,7 +6,7 @@ export default function Home() {
   //const {dark , setDark , handleThemeChange} = useContext(AppContext);
   const {user, connectWallet} = useContext(BridgeV1Context)
   return (
-    <div className="flex flex-col h-screen min-w-screen relative flex-wrap pb-[2rem]">
+    <div className="flex flex-col h-full min-w-screen relative flex-wrap pb-[2rem]">
       
       <Image src={'/Assets/BRIDGEUI/Desktop/mainbg.svg'} width={0} height={0} alt="GrayZone" className={`h-full w-full object-cover -z-50 md:object-cover absolute top-0 left-0`}/>
       <div className='h-full w-screen bg-black absolute -z-40 bg-opacity-70 top-0 left-0'/>
@@ -44,41 +44,25 @@ export default function Home() {
 
 
       {/*MAIN PAGE*/}
+      <div className='flex flex-col gap-[2rem] justify-center items-center'>
 
-      <div className='flex flex-col items-center justify-between gap-[4rem] mt-[10rem]'>
+      <div className='flex flex-col items-center justify-between gap-[4rem] md:gap-[6rem] mt-[10rem] md:mt-[8rem]'>
 
-            
-          <div className='flex flex-col w-[322px] h-[230px] bg-sky-900 bg-opacity-50 rounded-2xl shadow'>
-              
-              <div className="flex justify-between">
+          <div className='flex flex-col md:w-[800px] md:h-[383px] w-[322px] h-[230px] bg-sky-900 bg-opacity-50 rounded-2xl shadow'>
                 
-                <div>
-                  HELLo
-                </div>
-              
-                <div className=''>
-                  <div className='w-[94px] h-[113px] bg-indigo-300 bg-opacity-60 rounded-[19px]'>
-                    <Image className=" w-[94px] h-[98px] origin-top-left rotate-90" src="/Assets/BRIDGEUI/Phone/Phone/hud.svg" width={0} height={0} alt="HUD"/>                    
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                Lower El
-              </div>
           </div>
 
-          <div className='flex flex-col w-[322px] h-[230px] bg-sky-900 bg-opacity-50 rounded-2xl shadow'>
-            <div className="w-[94px] h-[113px] bg-indigo-300 bg-opacity-60 rounded-[19px]">
-                
-            </div>
-            <div>
-                Lower El
-            </div>
+          <div className='flex flex-col md:w-[800px] md:h-[383px] w-[322px] h-[230px] bg-sky-900 bg-opacity-50 rounded-2xl shadow'>
+            
           </div>
         
-        </div>    
-     
+        </div>  
+
+        <div className='text-white font-bold text-[2rem] bg-sky-500 w-[14rem] h-[4rem] flex justify-center items-center rounded-2xl'>
+          <button>EXECUTE</button>
+        </div>
+          
+      </div>
     </div>
   )
 }
