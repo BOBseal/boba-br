@@ -21,7 +21,6 @@ export default function RootLayout({
       <body>
         <BridgeV1Provider>
           <main>
-          <Header/>
           {children}
           </main>
         </BridgeV1Provider>
