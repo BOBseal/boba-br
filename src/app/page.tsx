@@ -27,7 +27,7 @@ export default function Home() {
         <div className='hidden md:flex gap-4 justify-between'>    
             <button>Home</button>
             <button>Wormhole Scan</button>
-            <div className="w-[126px] h-[34px] relative" onClick={()=> connectWallet()}>
+            <div className="w-[126px] h-[34px] relative hover:cursor-pointer" onClick={()=> connectWallet()}>
               <Image className="w-[126px] h-[34px] left-0 top-0 absolute rounded-[51px]" src="/Assets/BRIDGEUI/ConnectButton/ggg.svg" height={34} width={126} alt="connect wallet"/>
               <div className="w-[60.21px] h-[18.89px] left-[51.29px] top-[7.56px] absolute bg-blue-900 shadow backdrop-blur-[20px]"></div>
               <div className="w-[51.29px] h-[16.37px] left-[60px] top-[10px] absolute text-white text-[11px] font-bold font-['K2D']">
