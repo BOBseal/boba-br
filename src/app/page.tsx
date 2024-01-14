@@ -23,8 +23,17 @@ export default function Home() {
         <div className='hidden md:flex gap-4 justify-between'>    
             <button>Home</button>
             <button>Wormhole Scan</button>
-            <Image src={`/Assets/BRIDGEUI/connectButton.svg`} width={100} height={40} alt={"Connect Wallet"} className="object-contain"/>
-            <button className='flex p-1 pl-2 pr-2 bg-blue-950 rounded-3xl'>{user.address ? <>0x...{user.address.slice(37)}</>:<>Connect Wallet</>}</button>
+            <div className="w-[126px] h-[34px] relative" onClick={()=> connectWallet()}>
+              <Image className="w-[126px] h-[34px] left-0 top-0 absolute rounded-[51px]" src="/Assets/BRIDGEUI/ConnectButton/ggg.svg" height={34} width={126} alt="connect wallet"/>
+              <div className="w-[60.21px] h-[18.89px] left-[51.29px] top-[7.56px] absolute bg-blue-900 shadow backdrop-blur-[20px]"></div>
+              <div className="w-[51.29px] h-[16.37px] left-[60px] top-[10px] absolute text-white text-[11px] font-bold font-['K2D']">
+                {user.address ?
+                <>0x...{user.address.slice(37)}</>:
+                <>CONNECT</>  
+              }
+              </div>
+            </div>
+
         </div>
       
       </div>
@@ -32,31 +41,18 @@ export default function Home() {
 
       {/*MAIN PAGE*/}
 
-      <div className='flex flex-col items-center'>
+      <div className='flex flex-col items-center justify-between gap-[4rem] mt-[14rem]'>
 
-        <div className=' items-center justify-between flex flex-col'>
-        {/* BRIDGE CARD */}
             
-              <Image src={`/Assets/BRIDGEUI/Desktop/bridge-card.svg`} width={0} height={0} alt={"Connect Wallet"} className="absoulte top-[5rem] h-[20rem] md:h-[21rem] w-[85%] object-cover md:w-[40rem] lg:w-[55rem] bg-transparent drop-shadow-2xl mt-[4rem] md:mt-[3rem] justify-center"/>
-              <div className='absolute top-[5rem] h-[21rem] md:h-[21rem] w-[85%] md:w-[40rem] lg:w-[55rem] mt-[5rem] lg:mt-[6.2rem] md:mt-[5rem]'>
-                <div className='flex justify-center items-center h-full w-full'>
-                  <input type={'number'}/>
-                </div>
-              </div>
-              
-              <div className='flex mt-[2rem] md:mt-[1rem] lg:mt-[2.5rem]'>
-                <Image src={'/Assets/BRIDGEUI/switch.svg'} height={0} width={0} alt="" className='object-cover h-[3rem] w-[3rem] md:w-[3.5rem] md:h-[3.5rem]'/>
-              </div>
+          <div className='w-[322px] h-[230px] bg-sky-900 bg-opacity-50 rounded-2xl shadow'>
 
-              <Image src={`/Assets/BRIDGEUI/Desktop/bridge-card.svg`} width={0} height={0} alt={"Connect Wallet"} className="absoulte w-[85%] object-cover h-[20rem] md:h-[21rem] md:w-[40rem] lg:w-[55rem] mt-[3rem] bg-transparent md:mt-[2rem] lg:mt-[3rem]  drop-shadow-2xl"/>
-              <div className='absolute w-[85%] bottom-[4.4rem] md:bottom-[2.4rem] lg:bottom-[3rem] h-[21rem] md:h-[21rem] md:w-[40rem] lg:w-[55rem] md:mt-[5rem] lg:mt-[6rem]'>
-                <div className='flex justify-center items-center h-full w-full'>
-                  <input type={'number'}/>
-                </div>
-              </div>
-        </div>    
+          </div>
+
+          <div className='w-[322px] h-[230px] bg-sky-900 bg-opacity-50 rounded-2xl shadow'>
+
+          </div>
         
-      </div>
+        </div>    
      
     </div>
   )
