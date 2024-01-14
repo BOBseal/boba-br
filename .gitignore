@@ -7,7 +7,7 @@
 /GrayzoneContracts
 # testing
 /coverage
-/public/Assets/BRIDGEUI
+
 # next.js
 /.next/
 /out/
