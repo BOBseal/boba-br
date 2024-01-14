@@ -11,8 +11,8 @@ const Header = () => {
             LOGO
         </div>
         
-        <div className='items-center pr-[2rem] absolute left-0 top-0'>
-            <Image src={'/Assets/BRIDGEUI/mobile-menu-int.svg'} height={20} width={20} />
+        <div className='items-center pr-[2rem] absolute right-0 top-[5px] md:hidden'>
+            <Image src={'/Assets/BRIDGEUI/connectButton.svg'} height={20} width={30} />
         </div>
       </div>
     </div>
