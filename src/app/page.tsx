@@ -17,7 +17,11 @@ export default function Home() {
         <div>LOGO</div>
         
         <div className='flex pr-[2rem] md:hidden'>
-          <Image src={'/Assets/BRIDGEUI/mobile-menu-int.svg'} width={30} height={30} alt='menu' className=""/>
+          <div className="w-[22px] h-[17px] relative">
+          <div className="w-[22px] h-[0px] left-[22px] top-[-0px] absolute origin-top-left -rotate-180 border border-white"></div>
+          <div className="w-[22px] h-[0px] left-[22px] top-[8.50px] absolute origin-top-left -rotate-180 border border-white"></div>
+          <div className="w-[22px] h-[0px] left-[22px] top-[17px] absolute origin-top-left -rotate-180 border border-white"></div>
+          </div>
         </div>
 
         <div className='hidden md:flex gap-4 justify-between'>    
@@ -41,15 +45,37 @@ export default function Home() {
 
       {/*MAIN PAGE*/}
 
-      <div className='flex flex-col items-center justify-between gap-[4rem] mt-[14rem]'>
+      <div className='flex flex-col items-center justify-between gap-[4rem] mt-[10rem]'>
 
             
-          <div className='w-[322px] h-[230px] bg-sky-900 bg-opacity-50 rounded-2xl shadow'>
+          <div className='flex flex-col w-[322px] h-[230px] bg-sky-900 bg-opacity-50 rounded-2xl shadow'>
+              
+              <div className="flex justify-between">
+                
+                <div>
+                  HELLo
+                </div>
+              
+                <div className=''>
+                  <div className='flex w-[140px] h-[140px] bg-indigo-300 bg-opacity-30 rounded-[19px] z-10'>
+                    
+                  </div>
+                  <Image className="absolute -z-10 w-[94px] h-[118px] rotate-90 right-[30px] -mt-[50px]" src="/Assets/BRIDGEUI/Phone/Phone/hud.svg" width={0} height={0} alt="HUD"/>
+                </div>
+              </div>
 
+              <div>
+                Lower El
+              </div>
           </div>
 
-          <div className='w-[322px] h-[230px] bg-sky-900 bg-opacity-50 rounded-2xl shadow'>
-
+          <div className='flex flex-col w-[322px] h-[230px] bg-sky-900 bg-opacity-50 rounded-2xl shadow'>
+            <div className="w-[94px] h-[113px] bg-indigo-300 bg-opacity-60 rounded-[19px]">
+                <Image className="w-[94px] h-[98px] origin-top-left rotate-90" src="/Assets/BRIDGEUI/ConnectButton/ggg.svg" width={0} height={0} alt="HUD"/>
+            </div>
+            <div>
+                Lower El
+            </div>
           </div>
         
         </div>    
