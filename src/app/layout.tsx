@@ -7,8 +7,8 @@ import { Analytics } from '@vercel/analytics/react'
 import {BridgeV1Provider} from '../Context/bridgeV1Context'
 import Header from '../Comp/Header'
 export const metadata = {
-  title: 'GrayZone Web3 Services',
-  description: 'Official Site for GrayZone Web3 Service Agency',
+  title: 'NEBULA BRIDGE - OFFICIAL',
+  description: 'Nebula Bridge is a Cross-Chain Native and ERC20 Token Bridge Powered by WORMHOLE & LayerZero',
 }
 
 export default function RootLayout({

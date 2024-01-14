@@ -21,7 +21,7 @@ export default function Home() {
         <div className='hidden md:flex gap-4 justify-between'>    
             <button>Home</button>
             <button>Wormhole Scan</button>
-            <button className='flex p-1 rounded-3xl'>{user.address ? <>0x...{user.address.slice(37)}</>:<>Connect Wallet</>}</button>
+            <button className='flex p-1 pl-2 pr-2 bg-blue-950 rounded-3xl'>{user.address ? <>0x...{user.address.slice(37)}</>:<>Connect Wallet</>}</button>
         </div>
       
       </div>
