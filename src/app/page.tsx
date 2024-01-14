@@ -57,10 +57,9 @@ export default function Home() {
                 </div>
               
                 <div className=''>
-                  <div className='flex w-[140px] h-[140px] bg-indigo-300 bg-opacity-30 rounded-[19px] z-10'>
-                    
+                  <div className='w-[94px] h-[113px] bg-indigo-300 bg-opacity-60 rounded-[19px]'>
+                    <Image className=" w-[94px] h-[98px] origin-top-left rotate-90" src="/Assets/BRIDGEUI/Phone/Phone/hud.svg" width={0} height={0} alt="HUD"/>                    
                   </div>
-                  <Image className="absolute -z-10 w-[94px] h-[118px] rotate-90 right-[30px] -mt-[50px]" src="/Assets/BRIDGEUI/Phone/Phone/hud.svg" width={0} height={0} alt="HUD"/>
                 </div>
               </div>
 
@@ -71,7 +70,7 @@ export default function Home() {
 
           <div className='flex flex-col w-[322px] h-[230px] bg-sky-900 bg-opacity-50 rounded-2xl shadow'>
             <div className="w-[94px] h-[113px] bg-indigo-300 bg-opacity-60 rounded-[19px]">
-                <Image className="w-[94px] h-[98px] origin-top-left rotate-90" src="/Assets/BRIDGEUI/ConnectButton/ggg.svg" width={0} height={0} alt="HUD"/>
+                
             </div>
             <div>
                 Lower El
