@@ -15,7 +15,7 @@ export default function Home() {
         <div>LOGO</div>
         
         <div className='flex pr-[2rem] md:hidden'>
-          <Image src={'/Assets/BRIDGEUI/mobile-menu-int.svg'} width={30} height={30} className=""/>
+          <Image src={'/Assets/BRIDGEUI/mobile-menu-int.svg'} width={30} height={30} alt='menu' className=""/>
         </div>
 
         <div className='hidden md:flex gap-4 justify-between'>    
