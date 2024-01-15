@@ -46,7 +46,7 @@ export default function Home() {
       {/*MAIN PAGE*/}
       <div className='flex flex-col gap-[2rem] justify-center items-center'>
 
-      <div className='flex flex-col items-center justify-between gap-[4rem] md:gap-[6rem] mt-[10rem] md:mt-[8rem]'>
+      <div className='flex flex-col items-center justify-between gap-[4rem] md:gap-[6rem] mt-[4rem] md:mt-[8rem]'>
 
           <div className='flex flex-col md:w-[800px] md:h-[383px] w-[322px] h-[230px] bg-sky-900 bg-opacity-50 rounded-2xl shadow'>
                 
