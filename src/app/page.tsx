@@ -48,7 +48,15 @@ export default function Home() {
 
       <div className='flex flex-col items-center justify-between gap-[4rem] md:gap-[6rem] mt-[4rem] md:mt-[8rem]'>
 
-          <div className='flex flex-col md:w-[800px] md:h-[383px] w-[322px] h-[230px] bg-sky-900 bg-opacity-50 rounded-2xl shadow'>
+          <div className='flex flex-col md:w-[800px] md:h-[383px] w-[322px] h-[230px] bg-sky-900 bg-opacity-50 rounded-2xl shadow items-center justify-between'>
+                
+              <div className='flex h-[65%] w-full gap-[1rem]'>
+                
+              </div>
+
+              <div className='flex h-[33%] w-full'>
+
+              </div>
                 
           </div>
 
