@@ -46,19 +46,31 @@ export default function Home() {
       {/*MAIN PAGE*/}
       <div className='flex flex-col gap-[2rem] justify-center items-center'>
 
-      <div className='flex flex-col items-center justify-between gap-[4rem] md:gap-[6rem] mt-[4rem] md:mt-[8rem]'>
+      <div className='flex flex-col items-center justify-between gap-[1.5rem] md:gap-[3rem] mt-[4rem] md:mt-[8rem]'>
 
           <div className='flex flex-col md:w-[800px] md:h-[383px] w-[322px] h-[230px] bg-sky-900 bg-opacity-50 rounded-2xl shadow items-center justify-between'>
                 
-              <div className='flex h-[65%] w-full gap-[1rem]'>
-                
+              <div className='flex h-[75%] w-full gap-[1rem] justify-between'>
+                <div className='bg-transparent w-[62%] h-full'>
+
+                    <Image src={'/Assets/BRIDGEUI/bar.svg'} width={0} height={0} alt='input' className='object-cover w-full bg-transparent ml-[4px] mt-[35px] h-[52px] md:h-[80px] '/>
+                    <Image src={'/Assets/BRIDGEUI/bar.svg'} width={0} height={0} alt='input' className='object-cover w-full bg-transparent ml-[4px] mt-[35px] h-[52px] md:h-[80px] '/>
+                    <input type={'number'} className='absolute top-0'/>
+                </div>
+
+                <div className=' md:w-[45%] h-full'>
+
+                </div>
+
               </div>
 
-              <div className='flex h-[33%] w-full'>
+              <div className='flex h-[25%] w-full'>
 
               </div>
                 
           </div>
+
+          <Image src={'/Assets/BRIDGEUI/switch.svg'} width={0} height={0} alt='input' className=' w-full bg-transparent h-[60px] '/>
 
           <div className='flex flex-col md:w-[800px] md:h-[383px] w-[322px] h-[230px] bg-sky-900 bg-opacity-50 rounded-2xl shadow'>
             
