@@ -52,8 +52,8 @@ export default function Home() {
                 
               <div className='flex h-[75%] w-full gap-[1rem] justify-between'>
                 <div className='bg-transparent w-[62%] h-full -z-10'>
-                    <Image src={'/Assets/BRIDGEUI/bar.svg'} width={0} height={0} alt='input' className='object-cover w-full bg-transparent ml-[4px] mt-[35px] h-[52px] md:h-[80px] -z-50'/>
-                    <Image src={'/Assets/BRIDGEUI/bar.svg'} width={0} height={0} alt='input' className='object-cover w-full bg-transparent ml-[4px] mt-[35px] h-[52px] md:h-[80px] '/>
+                    <Image src={'/Assets/BRIDGEUI/bar.svg'} width={0} height={0} alt='input' className='object-contain w-full bg-transparent md:-ml-[44px] md:mt-[55px] h-[52px] md:h-[80px] -z-50'/>
+                    <Image src={'/Assets/BRIDGEUI/bar.svg'} width={0} height={0} alt='input' className='object-contain w-full bg-transparent md:-ml-[44px] md:mt-[45px] h-[52px] md:h-[80px] '/>
                     <input type={'number'} className='absolute top-0'/>
                 </div>
 
